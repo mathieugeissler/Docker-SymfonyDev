@@ -1,0 +1,54 @@
+application:
+    build: code
+    volumes:
+        - ./symfony:/var/www/symfony
+        - ./logs/symfony:/var/www/symfony/app/logs
+    tty: true
+
+db:
+    image: mysql
+    ports:
+        - 3306:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: Rezo
+        MYSQL_USER: rezo
+        MYSQL_PASSWORD: rezo
+
+php:
+    build: php-fpm
+    volumes_from:
+        - application
+    links:
+        - db
+    ports:
+        - 9000:9000
+
+nginx:
+    build: nginx
+    ports:
+        - 80:80
+    links:
+        - php
+    volumes_from:
+        - application
+    volumes:
+        - ./logs/nginx/:/var/log/nginx
+elk:
+    image: willdurand/elk
+    ports:
+        - 81:80
+    volumes:
+        - ./elk/logstash:/etc/logstash
+        - ./elk/logstash/patterns:/opt/logstash/patterns
+    volumes_from:
+        - application
+        - php
+        - nginx
+
+tools:
+    build: tools
+    volumes_from:
+        - application
+    links:
+        - php

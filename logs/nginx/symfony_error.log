@@ -1,0 +1,602 @@
+2015/11/06 20:26:24 [error] 11#0: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:26:32 [error] 11#0: *3 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:26:32 [error] 11#0: *3 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100", referrer: "http://192.168.99.100/"
+2015/11/06 20:27:16 [error] 11#0: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:27:16 [error] 11#0: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/"
+2015/11/06 20:33:50 [error] 11#0: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:33:52 [error] 11#0: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:33:53 [error] 11#0: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:35:27 [error] 11#0: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:35:30 [error] 11#0: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:35:33 [error] 11#0: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:37:38 [error] 11#0: *22 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/app_dev.ph...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/app_dev.php/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:37:41 [error] 11#0: *22 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/app_dev.ph...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/app_dev.php/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:38:22 [error] 8#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/app_dev.ph...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/app_dev.php/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:38:52 [error] 8#0: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:38:53 [error] 8#0: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/app_dev.ph...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/app_dev.php/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:38:56 [error] 8#0: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/app_dev.ph...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/app_dev.php/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:39:00 [error] 8#0: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:39:02 [error] 8#0: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:39:50 [error] 10#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:40:21 [error] 10#0: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:40:24 [error] 10#0: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:42:12 [error] 10#0: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:42:51 [error] 10#0: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:43:21 [error] 10#0: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:43:25 [error] 10#0: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:43:26 [error] 10#0: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:43:30 [error] 10#0: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 20:43:47 [error] 10#0: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:43:52 [error] 10#0: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/web/')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /web/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:43:56 [error] 10#0: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:55:45 [error] 10#0: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:56:00 [error] 10#0: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/index.php')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Comp" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:56:10 [error] 10#0: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:59:03 [error] 9#0: *41 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "HEAD / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:59:03 [error] 9#0: *41 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "HEAD / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 20:59:29 [error] 9#0: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "HEAD / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 21:00:53 [error] 9#0: *47 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "HEAD / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 21:01:52 [error] 9#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/config.pgp')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Com" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /config.pgp HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/06 21:02:00 [error] 9#0: *56 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/logo_symfony.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:00 [error] 9#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/structure.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:00 [error] 9#0: *51 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/body.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:00 [error] 9#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/sensio...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/sensiodistribution/webconfigurator/css/install.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:03 [error] 9#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/grey_magnifier.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:15 [error] 9#0: *51 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/body.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:15 [error] 9#0: *56 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/sensio...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/sensiodistribution/webconfigurator/css/install.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:15 [error] 9#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/structure.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:15 [error] 8#0: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/logo_symfony.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:16 [error] 8#0: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/grey_magnifier.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:20 [error] 9#0: *55 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/body.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:20 [error] 8#0: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/css/structure.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:20 [error] 9#0: *56 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/sensio...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/sensiodistribution/webconfigurator/css/install.css HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:21 [error] 9#0: *51 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/logo_symfony.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:02:24 [error] 9#0: *56 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/bundles/framew...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /bundles/framework/images/grey_magnifier.png HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/config.php"
+2015/11/06 21:14:57 [error] 10#0: *181 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 21:35:30 [error] 8#0: *10 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "POST /app_dev.php/admin/blog/post/load HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/app_dev.php/admin/blog/post"
+2015/11/06 21:35:30 [error] 8#0: *8 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app_dev.php/_wdt/61d58e HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/app_dev.php/admin/blog/post"
+2015/11/06 22:16:26 [error] 11#0: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/06 22:16:29 [error] 11#0: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/11/07 09:38:25 [error] 10#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:42:36 [error] 10#0: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:42:55 [error] 10#0: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:43:03 [error] 10#0: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:43:46 [error] 9#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:43:56 [error] 9#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:44:07 [error] 9#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/07 09:44:52 [error] 9#0: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:31:40 [error] 8#0: *1 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:32:00 [error] 11#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:32:10 [error] 11#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:32:25 [error] 11#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:32:32 [error] 11#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:32:37 [error] 11#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/08 10:34:05 [error] 11#0: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/09 07:53:41 [error] 11#0: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/09 07:53:44 [error] 11#0: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/09 15:23:07 [error] 11#0: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/09 16:47:23 [error] 11#0: *85 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 09:59:09 [error] 10#0: *952 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/Ressources/pub...')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symf" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /Ressources/public/img/moi.jpg HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/app_dev.php"
+2015/11/10 13:30:16 [error] 10#0: *1793 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 13:30:19 [error] 10#0: *1793 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 13:30:21 [error] 10#0: *1793 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 13:30:23 [error] 10#0: *1793 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 13:30:28 [error] 10#0: *1793 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/10 13:49:34 [error] 10#0: *1808 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:18:32 [error] 7#0: *42 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app_dev.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:19:22 [error] 7#0: *49 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'AppBundle\AppBundle' not found in /var/www/symfony/app/AppKernel.php on line 19" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app_dev.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:21:00 [error] 7#0: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:21:02 [error] 7#0: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:21:04 [error] 7#0: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:21:05 [error] 7#0: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/12 08:23:07 [error] 7#0: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app.php HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/19 10:17:44 [error] 7#0: *574 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/19 10:32:25 [error] 7#0: *674 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'Symfony\Component\Routing\Exception\ResourceNotFoundException' in /var/www/symfony/app/cache/prod/appProdUrlMatcher.php:275
+Stack trace:
+#0 /var/www/symfony/app/cache/prod/classes.php(1419): appProdUrlMatcher->match('/blog/')
+#1 /var/www/symfony/app/cache/prod/classes.php(1282): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /var/www/symfony/app/cache/prod/classes.php(2478): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 [internal function]: Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher))
+#4 /var/www/symfony/app/cache/prod/classes.php(2266): call_user_func(Array, Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), 'kernel.request', Object(Symfony\Componen" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /blog/ HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev"
+2015/11/20 18:26:13 [error] 11#0: *444 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare class Rezo\Bundle\AdminBundle\Blog\Controller\AdminPostController in /var/www/symfony/src/Rezo/Bundle/AdminBundle/Controller/Blog/AdminPostController.php on line 0" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET /app_dev.php/admin/blog/post HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "rezo.dev", referrer: "http://rezo.dev/app_dev.php/admin/blog/post"
+2015/12/16 11:40:15 [error] 9#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/12/16 11:40:47 [error] 9#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
+2015/12/16 11:43:08 [error] 8#0: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)' in /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'root', 'root', Array)
+#2 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'root', 'root', Array)
+#3 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctrine\DBAL\Connection->connect()
+#4 /var/www/symfony/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(389): Doctrine\DBAL\Connection->getDatabasePlatform" while reading response header from upstream, client: 192.168.99.1, server: rezo.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.0.4:9000", host: "192.168.99.100"
